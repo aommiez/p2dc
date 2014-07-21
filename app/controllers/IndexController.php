@@ -8,5 +8,10 @@ class IndexController extends ControllerBase
 
     }
 
+    public function statusAction()
+    {
+        \Phalcon\Tag::setTitle('P2DC real-time bandwidth');
+    }
+
 }
 

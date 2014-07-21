@@ -36,4 +36,5 @@ define('PTOOLS_IP', '192.168.');
  *
  * @var string
  */
-define('PTOOLSPATH', 'C:/xampp/htdocs/phalcon');
+//define('PTOOLSPATH', 'C:/xampp/htdocs/phalcon');
+define('PTOOLSPATH', '/Applications/XAMPP/xamppfiles/htdocs/phalcon');
