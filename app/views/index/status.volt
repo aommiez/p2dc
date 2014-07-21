@@ -117,7 +117,7 @@ return "data:image/png;base64,".base64_encode(get_url($url));
         font-size: 14px;
     }
     .serverText p {
-        border-bottom: 1px dashed gray;"
+        border-bottom: 1px dashed gray;
     }
 </style>
 <div id="main" class="shadow">
