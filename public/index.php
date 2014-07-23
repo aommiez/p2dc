@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(E_ALL);
-
+(new Phalcon\Debug)->listen();
 try {
 
     /**
@@ -22,6 +22,12 @@ try {
     /**
      * Handle the request
      */
+    $di->setShared('session', function() {
+        $session = new Phalcon\Session\Adapter\Files();
+        $session->start();
+        return $session;
+    });
+
     $application = new \Phalcon\Mvc\Application($di);
 
     echo $application->handle()->getContent();
